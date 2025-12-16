@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Absolute XPath Finder",
+  "version": "1.0",
+  "description": "Finds the absolute XPath of any element.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["xpath_finder.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
